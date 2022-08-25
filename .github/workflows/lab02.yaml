@@ -35,4 +35,5 @@ jobs:
               working-directory: ./src
               run: go tool cover -func coverage.out -o coverage.txt
             - name: Print out report
+              working-directory: ./src
               run: cat coverage.txt
