@@ -60,6 +60,7 @@ jobs:
               name: Save Code vulnerability scan report
               with:
                 name: code-vuln-report
+                format: 'table'
                 path: trivy-results.sarif
     quality-gate:
         runs-on: ubuntu-latest
